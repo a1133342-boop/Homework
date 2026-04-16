@@ -22,10 +22,13 @@ switch($product){
 }
 
 
-$_SESSION['pname'] = $pname;
-$_SESSION['price'] = $price;
-$_SESSION['amount'] = $amount;
-$_SESSION['brand'] = $brand;
+$_SESSION['cart'][] = array(
+    "name" => $pname,
+    "price" => $price,
+    "amount" => $amount,
+    "brand" => $brand
+);
+
 
 setcookie("last_product", $pname, time()+3600);
 
