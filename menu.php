@@ -24,7 +24,7 @@
 <br><br>
 
 數量：
-<input type="number" name="amount" value="1">
+<input type="number" name="amount" value="1" min="1">
 
 <br><br>
 
